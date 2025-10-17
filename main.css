@@ -34,7 +34,46 @@ a {
 }
 /*Responsible for being the main stylesheet of the multipage website providing the main background and dont color for any device.*/
 /*Adding in media queries*/
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) and (orientation: landscape){
+
+    .wrapper-main {
+    width: 100%;
+    background-color:navy;
+     }
+
+}
+
+/* I made sure to add orientation in order to implement landscape & portrait mode for mobile phones. */
+@media only screen and (min-width: 600px) and (orientation: portrait){
+
+    .wrapper-main {
+    width: 100%;
+    background-color: navy;
+     }
+
+}
+
+@media only screen and (min-width: 601px) and (orientation: landscape){
+
+    .wrapper-main {
+    width: 100%;
+    background-color: navy;
+     }
+
+}
+
+@media only screen and (min-width: 601px) and (orientation: portrait){
+
+    .wrapper-main {
+    width: 100%;
+    background-color: navy;
+     }
+
+}
+/* All scaling above set up to 600px-601px* e.g. Desktop & iPhone or Samsung mobile. */
+/* Rule of thumb being: 600px, 601px, 768px, 992px, 1200px & above. */
+
+@media only screen and (min-width: 768px) {
 
     .wrapper-main {
     width: 100%;
@@ -42,7 +81,7 @@ a {
 
 }
 
-@media (min-width: 601px) {
+@media only screen and (min-width: 992px) {
 
     .wrapper-main {
     width: 100%;
@@ -50,10 +89,7 @@ a {
 
 }
 
-/*All scaling above set up to 600px-601px* e.g. Desktop & iPhone/Samsung mobile.*/
-/*Rule of thumb being: 600px, 601px, 768px, 992px, 1200px & above.*/
-
-@media (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
 
     .wrapper-main {
     width: 100%;
